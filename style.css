@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: auto;
+
+}
+img {
+    height: 100px;
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    width:60% ;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+section {
+    padding: 60px 40px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+section h1,
+section h2 {
+    color: #111;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+main {
+    margin-top: 80px;
+    padding: 4rem 2rem;
+}
+.product-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    text-align: center;
+    position: relative;
+    width: auto;
+}
+.img1{
+    width:100%;
+    height:auto;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Contact section */
+address {
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
